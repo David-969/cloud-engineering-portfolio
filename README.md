@@ -55,7 +55,7 @@ Architecture Diagram
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
-![first deployment workflow](Diagrams/firstdeploymentworkflow..png)
+![deploymentflow](Diagrams/deploymentflow..png)
 
 
 EC2 Instance
