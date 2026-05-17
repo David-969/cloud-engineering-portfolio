@@ -75,7 +75,7 @@ Github Repo
 
 ![githubrepo](Screenshots/githubrepo.png)
 
-SSH Login Successul
+SSH Login Successful
 
 ![sshlogin](Screenshots/sshlogin.png)
 
