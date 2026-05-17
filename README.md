@@ -51,19 +51,34 @@ Live Website
 
 Screenshots
 
+Architecture Diagram 
+
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
 EC2 Instance
-![EC2 Dashboard](Screenshots/ec2-dashboard.png)
+
+![runningec2](Screenshots/runningec2.png)
 
 Nginx Status
-![Nginx Running](Screenshots/nginx-running.png)
+
+![runningnginx](Screenshots/runningnginx.png)
 
  Live Website
-![Live Website](Screenshots/live-website.png)
+ 
+![Livewebsite](Screenshots/livewebsite.png)
 
  EC2 Instance
-![EC2 Dashboard](Screenshots/ec2-dashboard.png)
+ 
+![securitygroups](Screenshots/securitygroups.png)
+
+Github Repo
+
+![githubrepo](Screenshots/githubrepo.png)
+
+SSH Login Successful
+
+![sshlogin](Screenshots/sshlogin.png)
+
 
 Documentation
 Projects
@@ -76,8 +91,13 @@ Technical Notes
 Operational and troubleshooting notes available in:
 
 notes/linux-commands.md
+
 notes/nginx-notes.md
+
 notes/ssh-troubleshooting.md
+
 notes/aws-security-groups.md
+
 notes/git-github-notes.md
+
 notes/deployment-workflow.md
