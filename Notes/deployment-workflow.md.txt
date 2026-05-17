@@ -1,0 +1,67 @@
+Website Deployment Workflow Notes
+
+Local Development
+
+Website files created locally using:
+VS Code
+HTML
+CSS
+JavaScript
+
+Initial Deployment Method
+
+Used SCP to upload files directly to EC2.
+
+SCP Upload Command
+
+bash
+scp -i key.pem -r website-folder ec2-user@PUBLIC-IP:/home/ec2-user
+
+
+
+
+Nginx Deployment
+
+Copied website files into Nginx web root:
+
+sudo cp -r /home/ec2-user/fesh-home/* /usr/share/nginx/html/
+
+Restarted Nginx:
+
+sudo systemctl restart nginx
+
+GitHub Deployment Workflow
+
+Local Machine
+
+git add .
+git commit -m "Updated website"
+git push
+EC2 Deployment Update
+cd ~/fesh-home
+git pull
+sudo cp -r * /usr/share/nginx/html/
+sudo systemctl restart nginx
+
+
+Deployment Architecture
+
+VS Code
+↓
+GitHub
+↓
+AWS EC2
+↓
+Nginx
+↓
+Live Website
+
+
+Deployment Lessons Learned
+
+GitHub simplifies deployment updates
+Security Groups affect SSH access
+EC2 public IP can change after restart
+Nginx serves files from web root
+Linux file paths must be correct
+Git workflows improve deployment management

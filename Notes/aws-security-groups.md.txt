@@ -1,0 +1,88 @@
+AWS Security Groups Notes
+
+What is a Security Group?
+
+A Security Group acts as a virtual firewall for AWS EC2 instances.
+
+It controls:
+
+inbound traffic
+outbound traffic
+
+
+Important Ports
+
+Service	Port
+SSH	22
+HTTP	80
+HTTPS	443
+
+
+Inbound Rules Used
+
+SSH Rule
+Type	Port	Source
+SSH	22	My IP
+
+Purpose:
+Allows secure remote administration.
+
+HTTP Rule
+Type	Port	Source
+HTTP	80	0.0.0.0/0
+
+Purpose:
+Allows public website access.
+
+Common Security Group Issues
+
+1.SSH Timeout
+
+Cause
+
+Port 22 blocked or incorrect source IP.
+
+Fix
+
+Verify:
+
+SSH rule exists
+correct IP allowed
+EC2 running
+
+2.Website Not Accessible
+
+Cause
+
+HTTP port 80 not allowed.
+
+Fix
+
+Add inbound HTTP rule.
+
+Public IP Changes
+
+Stopping and starting EC2 may assign a new public IP.
+
+This can break:
+SSH access
+website access
+
+Elastic IP
+
+Elastic IP provides a static public IP address for EC2 instances.
+
+Benefits:
+
+permanent public IP
+stable SSH access
+stable website URL
+
+
+Security Group Flow
+
+Internet
+↓
+Security Group
+↓
+EC2 Instance

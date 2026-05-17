@@ -1,0 +1,37 @@
+Start Nginx
+
+sudo systemctl start nginx
+
+Enable Nginx at Boot
+
+sudo systemctl enable nginx
+
+Restart Nginx
+
+sudo systemctl restart nginx
+
+Check Nginx Status
+
+sudo systemctl status nginx
+
+Default Web Root
+
+/usr/share/nginx/html
+
+Nginx serves website files from this directory by default.
+
+Deploy Website Files
+
+sudo cp -r /home/ec2-user/fesh-home/* /usr/share/nginx/html/
+
+Test Nginx Locally
+
+curl localhost
+
+Important Note
+
+Use HTTP:
+
+http://PUBLIC-IP
+
+Not HTTPS unless SSL is configured.

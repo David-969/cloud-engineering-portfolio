@@ -1,0 +1,191 @@
+AWS EC2 Nginx Website Deployment Project
+
+Project Overview
+
+Built and deployed a static landing page on AWS EC2 using Linux and Nginx.
+
+This project was created to gain practical experience in:
+AWS cloud infrastructure
+Linux administration
+Nginx configuration
+SSH remote access
+Git and GitHub workflows
+Website deployment
+Cloud networking and troubleshooting
+
+ Project Objectives
+
+Launch and manage an AWS EC2 instance
+Configure Security Groups for web access
+Install and configure Nginx
+Deploy a static website
+Learn SSH administration
+Use GitHub for deployment workflow
+Troubleshoot networking and deployment issues
+
+
+Technologies Used
+
+ Cloud Platform
+AWS EC2
+AWS Security Groups
+
+Operating System
+Amazon Linux
+
+ Web Server
+Nginx
+
+ Version Control
+Git
+GitHub
+
+Tools
+VS Code
+PowerShell
+SSH
+
+
+Architecture Overview
+
+Local Machine
+↓
+GitHub Repository
+↓
+AWS EC2 Instance
+↓
+Nginx Web Server
+↓
+Live Website
+
+
+
+Deployment Workflow
+
+Step 1 — Launch EC2 Instance
+
+Created AWS EC2 instance
+Configured Security Groups
+Allowed:
+SSH Port 22
+HTTP Port 80
+
+Step 2 — Install Nginx
+
+Installed Nginx:
+
+sudo dnf install nginx -y
+
+Started Nginx:
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+Step 3 — Upload Website Files
+
+Initially deployed files using SCP:
+
+scp -i key.pem -r website-folder ec2-user@PUBLIC-IP:/home/ec2-user
+
+Moved files into Nginx web directory:
+
+sudo cp -r /home/ec2-user/fesh-home/* /usr/share/nginx/html/
+
+Step 4 — GitHub Deployment Workflow
+
+Initialized Git repository locally:
+
+git init
+git add .
+git commit -m "Initial commit"
+
+Connected to GitHub:
+
+git remote add origin REPOSITORY_URL
+git push -u origin main
+
+Cloned repository on EC2:
+
+git clone REPOSITORY_URL
+
+Updated live website:
+
+git pull
+sudo cp -r * /usr/share/nginx/html/
+sudo systemctl restart nginx
+Challenges and Troubleshooting
+SSH Timeout Issue
+
+Problem
+
+SSH connection timed out after restarting EC2 instance.
+
+Cause
+
+Security Group SSH rule restricted access to outdated public IP.
+
+Solution
+
+Updated inbound SSH rules to allow current IP access.
+
+Public IP Change
+
+Problem
+
+Website became inaccessible after EC2 stop/start.
+
+Cause
+
+AWS assigned a new public IP address.
+
+Solution
+
+Used updated public IP and learned Elastic IP concepts.
+
+Website Not Loading
+
+
+Problem
+
+Browser could not access website.
+
+Cause
+
+Used HTTPS instead of HTTP.
+
+Solution
+
+Accessed website using:
+http://PUBLIC-IP
+
+Key Skills Demonstrated
+
+AWS EC2 administration
+Linux command-line usage
+SSH remote administration
+Nginx configuration
+Git and GitHub workflows
+Cloud networking basics
+Security Group configuration
+Website deployment
+Troubleshooting and debugging
+Lessons Learned
+
+Key learning outcomes included:
+
+Understanding AWS networking basics
+Managing Linux-based web servers
+Deploying websites using Nginx
+Using GitHub for deployment workflows
+Diagnosing SSH and Security Group issues
+Understanding deployment lifecycle concepts
+Future Improvements
+
+Planned improvements:
+
+Elastic IP configuration
+Docker container deployment
+CI/CD automation
+HTTPS and SSL setup
+Terraform infrastructure deployment
+CloudWatch monitoring
+Screenshots and Diagrams

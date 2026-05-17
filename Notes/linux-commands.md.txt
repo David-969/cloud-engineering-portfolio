@@ -1,0 +1,82 @@
+List files and folders
+
+ls
+
+Shows files and folders in current directory.
+
+Change directory
+
+cd folder-name
+
+Moves into another directory.
+
+cd ~/fesh-home
+
+
+File Management
+
+Copy files
+
+cp source destination
+
+Example:
+
+sudo cp -r /home/ec2-user/fesh-home/* /usr/share/nginx/html/
+
+Move or rename files
+
+mv old-name new-name
+
+Remove files
+
+rm filename
+
+Remove directories recursively
+
+rm -rf folder-name
+
+System Administration
+
+Install packages
+
+sudo dnf install package-name -y
+
+Example:
+
+sudo dnf install nginx -y
+
+Start services
+
+sudo systemctl start nginx
+
+Enable services at boot
+
+sudo systemctl enable nginx
+
+Restart services
+
+sudo systemctl restart nginx
+
+Check service status
+
+sudo systemctl status nginx
+
+Networking
+
+Check listening ports
+
+sudo ss -tulpn
+
+Test local web server
+
+curl localhost
+
+SSH
+
+SSH into EC2
+
+ssh -i "key.pem" ec2-user@PUBLIC-IP
+
+Upload files with SCP
+
+scp -i key.pem -r folder ec2-user@PUBLIC-IP:/home/ec2-user

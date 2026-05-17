@@ -1,0 +1,66 @@
+
+
+
+SH Troubleshooting Notes
+
+Common SSH Errors
+
+1.Connection Timed Out
+
+Meaning
+Network connection could not reach port 22.
+
+Common Causes
+
+Security Group blocking SSH
+Wrong public IP
+Instance stopped
+Network issue
+
+Fixes
+
+Verify EC2 is running
+Check Security Group inbound rules
+Allow SSH on port 22
+Verify current public IP
+
+
+2.Permission Denied
+
+Meaning
+Authentication failed.
+
+Common Causes
+
+Wrong PEM key
+Wrong username
+Incorrect permissions
+
+Fixes
+
+Use correct PEM file
+Use correct EC2 username
+Verify SSH syntax
+
+ Common SSH Command
+
+bash
+
+ssh -i "dave-admin.pem" ec2-user@PUBLIC-IP
+
+
+Testing Port 22 from Windows
+PowerShell
+
+Test-NetConnection PUBLIC-IP -Port 22
+
+
+Security Group Reminder
+
+Required inbound rule:
+
+| Type | Port | Source             
+| ---- | ---- | -------------
+| SSH  | 22   | My IP or 0.0.0.0/0 
+
+

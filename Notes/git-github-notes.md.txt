@@ -1,0 +1,87 @@
+Check Git Status
+
+git status
+
+Shows tracked and untracked files.
+
+Add Files to Staging
+
+git add .
+
+Stages all files for commit.
+
+Create Commit
+
+git commit -m "Initial commit"
+
+Creates a snapshot of project changes.
+
+Configure Git Username
+
+git config --global user.name "Your Name"
+
+Configure Git Email
+
+git config --global user.email "you@example.com"
+
+Connect Local Repo to GitHub
+
+git remote add origin REPOSITORY_URL
+
+Push Code to GitHub
+
+git push -u origin main
+
+Uploads local repository to GitHub.
+
+Clone Repository
+
+git clone REPOSITORY_URL
+
+Downloads repository from GitHub.
+
+Pull Latest Changes
+
+git pull
+
+Downloads latest updates from GitHub.
+
+Common Git Errors
+
+src refspec main does not match any
+
+Cause
+
+Attempted to push before creating first commit.
+
+Fix
+
+Create commit first:
+
+git add .
+git commit -m "Initial commit"
+Author identity unknown
+
+Cause
+
+Git username and email not configured.
+
+Fix
+
+git config --global user.name "Your Name"
+
+git config --global user.email "you@example.com"
+
+GitHub Deployment Workflow
+
+VS Code
+↓
+Git Commit
+↓
+GitHub Push
+↓
+EC2 Git Pull
+↓
+Nginx Deployment
+↓
+Live Website

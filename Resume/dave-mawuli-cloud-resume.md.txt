@@ -1,0 +1,120 @@
+                                          
+
+                                   DAVID MAWULI KAGBERESI  
+
+ 
+                              Accra, Madina, +233207143790, davidkagberesi123@gmail.com,  
+
+                                      www.linkedin.com/in/david-mawuli-kagberesi,  
+
+                                         https://github.com/David-969/fesh-home 
+
+ 
+
+Aspiring Cloud and Infrastructure Engineer with hands-on experience deploying and managing web applications on AWS EC2 using Linux, Nginx, Git, and GitHub workflows. Skilled in troubleshooting SSH/networking issues, configuring Security Groups, and managing Linux-based deployments. Currently building practical cloud engineering and DevOps skills through real-world projects and self-driven labs. 
+
+ 
+
+EDUCATION   
+
+UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA , Degree in Information Technology Management (2022-2025)             
+
+UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA , Diploma in Information Technology Management (2020-2022)  
+
+ADISADEL COLLEGE ,West African Secondary School Certificate Examination (2017-2020)  
+
+ 
+
+TECHNICAL SKILLS  
+
+
+Cloud Platforms: 
+
+AWS EC2 
+
+AWS Security Groups 
+
+Elastic IP basics 
+
+Operating Systems: 
+
+Linux (Amazon Linux) 
+
+Windows 
+
+Web & Infrastructure: 
+
+Nginx 
+
+SSH 
+
+Static Website Hosting 
+
+ 
+
+Version Control: 
+
+Git 
+
+GitHub 
+
+Networking: 
+
+TCP/IP basics 
+
+ Port management 
+
+Security Groups 
+
+Network troubleshooting. 
+
+Tools: 
+
+VS Code 
+
+ PowerShell 
+
+
+PROJECTS 
+
+Project 1 — AWS EC2 Web Deployment 
+
+Deployed and managed a static landing page on AWS EC2 using Nginx and Linux administration. 
+
+Configured and managed AWS EC2 instance and Security Groups 
+
+ Installed and configured Nginx web server 
+
+Hosted and served website content using Linux file system structure 
+
+ Implemented Git and GitHub deployment workflow 
+
+Used SSH with PEM authentication for secure remote administration 
+
+Troubleshot connectivity, Security Group, and networking issues 
+
+ Managed deployment updates from GitHub repository to live server 
+
+ 
+
+Project 1 — AWS EC2 Web Deployment 
+
+Implemented source-controlled deployment workflow using Git and GitHub. 
+
+Initialized local Git repository using VS Code 
+
+ Managed commits, pushes, and remote GitHub repository integration 
+
+Cloned GitHub repository onto AWS EC2 instance 
+
+ Updated live web application using Git pull deployment workflow 
+
+
+
+LANGUAGES   
+
+Ewe - Native   
+
+English - Proficiency   
+
+Twi - Proficiency 
