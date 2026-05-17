@@ -73,7 +73,7 @@ Nginx Status
 
 Github Repo
 
-![githubrepo](Screenshots/githubrepo.png)
+![githubpage](Screenshots/githubpage.png)
 
 SSH Login Successful
 
