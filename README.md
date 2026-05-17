@@ -52,12 +52,12 @@ Live Website
 Screenshots
 
 
-First Deployment
+First Deployment with SCP Without Git and Github.
 
 ![deploymentflow](Diagrams/deploymentflow.png)
 
 
-Second Deployment with Git
+Second Deployment with Git and Github
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
