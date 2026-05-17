@@ -50,7 +50,7 @@ Live Website
 
 
 Screenshots
-Live Website
+
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
 EC2 Instance
