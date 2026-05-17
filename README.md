@@ -51,11 +51,15 @@ Live Website
 
 Screenshots
 
-Architecture Diagram 
 
-![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
+First Deployment
 
 ![deploymentflow](Diagrams/deploymentflow.png)
+
+
+Second Deployment with Git
+
+![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
 
 EC2 Instance
