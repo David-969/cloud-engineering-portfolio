@@ -54,7 +54,7 @@ Screenshots
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
 EC2 Instance
-![EC2 Dashboard](Screenshots/ec2-dashboard.png)
+![runningec2](Screenshots/runningec2.png)
 
 Nginx Status
 ![Nginx Running](Screenshots/nginx-running.png)
