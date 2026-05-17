@@ -51,11 +51,15 @@ Live Website
 
 Screenshots
 
-Architecture Diagram 
+
+First Deployment with SCP Without Git and Github.
+
+![deploymentflow](Diagrams/deploymentflow.png)
+
+
+Second Deployment with Git and Github
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
-
-![first deployment workflow](Diagrams/firstdeploymentworkflow..png)
 
 
 EC2 Instance
