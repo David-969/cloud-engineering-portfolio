@@ -1,5 +1,3 @@
-Cloud Engineering Portfolio
-
 Overview
 
 This repository contains my hands-on cloud engineering projects, deployment workflows, troubleshooting notes, architecture diagrams, and infrastructure documentation.
@@ -61,6 +59,10 @@ Second Deployment with Git and Github
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
+
+Third Deployment with Docker
+
+![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
 EC2 Instance
 
