@@ -107,7 +107,7 @@ This web page is unreachable due to NACL inbound rule in a deny state.
 
 EC2 Monitoring
 
-![ec2-monitoring](Screenshots/ec2-monitoring.png)
+![ec2monitoring](Screenshots/ec2monitoring.png)
 
 Documentation
 Projects
