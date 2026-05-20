@@ -55,38 +55,64 @@ First Deployment with SCP Without Git and Github.
 ![deploymentflow](Diagrams/deploymentflow.png)
 
 
+
+
+
 Second Deployment with Git and Github
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
+
+
+
 
 
 Third Deployment with Docker
 
 ![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
+
+
+
+
 EC2 Instance
 
 ![runningec2](Screenshots/runningec2.png)
+
+
 
 Nginx Status
 
 ![runningnginx](Screenshots/runningnginx.png)
 
+
+
  Live Website
  
 ![Livewebsite](Screenshots/livewebsite.png)
+
+
+
 
  EC2 Instance
  
 ![securitygroups](Screenshots/securitygroups.png)
 
+
+
+
 Github Repo
 
 ![githubpage](Screenshots/githubpage.png)
 
+
+
+
 SSH Login Successful
 
 ![sshlogin](Screenshots/sshlogin.png)
+
+
+
 
 
 Documentation
