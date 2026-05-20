@@ -1,0 +1,264 @@
+Dockerized Nginx Website Deployment
+
+Project Overview
+
+This project demonstrates containerized website deployment using Docker and Nginx on AWS EC2.
+
+The project was created to gain hands-on experience with:
+
+Docker installation
+Container management
+Nginx containers
+Port mapping
+Volume mounting
+Container troubleshooting
+Linux-based container deployments
+
+The website was deployed inside a Docker container running Nginx instead of directly installing Nginx on the EC2 host system.
+
+
+Project Objectives
+
+Install Docker on AWS EC2
+Learn Docker container workflows
+Run Nginx inside Docker
+Deploy website files into a container
+Understand Docker port mapping
+Learn Docker volume mounting
+Troubleshoot container deployment issues
+
+
+Technologies Used
+
+Cloud Platform
+AWS EC2
+
+Operating System
+Amazon Linux
+
+Container Platform
+Docker
+
+Web Server
+Nginx
+
+Tools
+Linux CLI
+SSH
+VS Code
+Git
+GitHub
+
+
+Architecture Overview
+
+Developer Machine
+↓
+GitHub Repository
+↓
+AWS EC2 Instance
+↓
+Docker Engine
+↓
+Nginx Container
+↓
+Mounted Website Files
+↓
+Browser Users
+
+
+
+
+
+
+
+
+
+Deployment Workflow
+
+Step 1 — Install Docker
+
+Updated packages:
+
+sudo dnf update -y
+
+Installed Docker:
+
+sudo dnf install docker -y
+
+
+Step 2 — Start Docker Service
+
+Started Docker:
+
+sudo systemctl start docker
+
+Enabled Docker at boot:
+
+sudo systemctl enable docker
+
+Verified Docker status:
+
+sudo systemctl status docker
+
+
+Step 3 — Verify Docker Installation
+
+Checked Docker version:
+
+docker --version
+
+Ran Docker test container:
+
+sudo docker run hello-world
+
+
+Step 4 — Run Nginx Container
+
+Pulled and started official Nginx container:
+
+sudo docker run -d -p 80:80 nginx
+
+Verified running containers:
+
+sudo docker ps
+
+
+Step 5 — Resolve Port Conflict
+Problem
+
+Docker container could not bind to port 80.
+
+Cause
+
+Host Nginx service was already using port 80.
+
+Solution
+
+Stopped host Nginx service:
+
+sudo systemctl stop nginx
+
+Verified port availability:
+
+sudo ss -tulpn | grep :80
+
+
+Step 6 — Deploy Website Files into Container
+
+Stopped previous container:
+
+sudo docker stop CONTAINER_ID
+
+Removed old container:
+
+sudo docker rm CONTAINER_ID
+
+Mounted website files into Nginx container:
+
+sudo docker run -d -p 80:80 \
+-v /usr/share/nginx/html:/usr/share/nginx/html \
+nginx
+
+This mounted the EC2 website directory directly into the container’s Nginx web root.
+
+Challenges and Troubleshooting
+Incorrect Volume Mount
+Problem
+
+Wrong website files were served inside container.
+
+Cause
+
+Incorrect folder path mounted into Docker container.
+
+Solution
+
+Mounted correct Nginx web root directory:
+
+/usr/share/nginx/html
+
+Understanding Host vs Container
+
+Learned the distinction between:
+
+EC2 host operating system
+
+Docker container environment
+
+Understood that containers isolate applications from the host OS while still sharing system resources.
+
+Key Docker Concepts Learned
+
+Docker Image
+
+A reusable template used to create containers.
+
+
+A running instance of a Docker image.
+
+Port Mapping
+
+Maps host ports to container ports.
+
+Example:
+
+-p 80:80
+
+Meaning:
+
+EC2 Port 80
+Container Port 80
+Volume Mounting
+
+Shares files between host OS and container.
+
+Example:
+
+-v /usr/share/nginx/html:/usr/share/nginx/html
+
+
+Skills Demonstrated
+
+Docker installation and configuration
+Container deployment
+Container management
+Linux troubleshooting
+Port mapping
+Volume mounting
+AWS EC2 administration
+Nginx container hosting
+Infrastructure troubleshooting
+
+
+Commands Used
+
+
+View Running Containers
+sudo docker ps
+
+Stop Container
+sudo docker stop CONTAINER_ID
+
+Remove Container
+sudo docker rm CONTAINER_ID
+
+Run Nginx Container
+sudo docker run -d -p 80:80 nginx
+
+
+Lessons Learned
+
+This project provided practical experience with:
+
+containerized deployments
+Docker networking basics
+infrastructure troubleshooting
+container lifecycle management
+modern deployment workflows
+
+The project also demonstrated the importance of:
+
+correct port allocation
+volume path accuracy
+understanding host vs container architecture

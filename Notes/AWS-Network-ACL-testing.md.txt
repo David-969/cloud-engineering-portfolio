@@ -1,0 +1,82 @@
+AWS Network ACL Testing
+
+Overview
+
+This note documents practical testing performed on AWS Network ACLs (NACLs) while hosting a website on EC2.
+
+The purpose was to understand how subnet-level traffic filtering affects website accessibility.
+
+Environment
+
+AWS EC2
+Amazon Linux
+Nginx
+Docker
+HTTP Port 80
+SSH Port 22
+
+Tests Performed
+
+Allowed HTTP Traffic
+Allowed inbound HTTP traffic on port 80.
+
+Result
+Website became accessible from browser.
+
+
+Denied HTTP Traffic
+
+Modified NACL rules to block HTTP traffic.
+
+Result
+Website became unreachable.
+
+Observation
+Traffic was blocked before reaching the EC2 instance.
+
+SSH Traffic Testing
+
+Tested SSH access behavior using port 22 rules.
+
+Result
+Incorrect rules prevented remote SSH access.
+
+
+Key Concepts Learned
+
+Security Groups
+
+Operate at instance level
+Stateful firewall
+Easier rule management
+
+Network ACLs
+
+Operate at subnet level
+Stateless firewall
+Rule order matters
+Explicit allow/deny behavior
+
+Key Learning Outcome
+
+Learned how AWS network controls affect traffic flow and website accessibility.
+
+Understood the difference between:
+instance-level security
+subnet-level traffic filtering
+
+
+Commands Used
+
+Check Open Ports
+
+bash 
+sudo ss -tulpn
+
+
+Troubleshooting Notes
+
+Incorrect NACL rules can block website traffic completely
+HTTP traffic requires proper inbound/outbound rules
+SSH access depends on port 22 accessibility
+Security Groups and NACLs work together
