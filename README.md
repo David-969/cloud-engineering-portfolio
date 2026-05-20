@@ -1,5 +1,3 @@
-Cloud Engineering Portfolio
-
 Overview
 
 This repository contains my hands-on cloud engineering projects, deployment workflows, troubleshooting notes, architecture diagrams, and infrastructure documentation.
@@ -51,16 +49,17 @@ Live Website
 
 Screenshots
 
-
 First Deployment with SCP Without Git and Github.
 
 ![deploymentflow](Diagrams/deploymentflow.png)
-
 
 Second Deployment with Git and Github
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
+Third Deployment with Docker
+
+![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
 EC2 Instance
 
@@ -86,6 +85,25 @@ SSH Login Successful
 
 ![sshlogin](Screenshots/sshlogin.png)
 
+inbound traffic allowed
+
+![inbound-traffic-allowed](Screenshots/inbound-traffic-allowed.png)
+Inbound traffic rule allowed here, makes it possible for the web page to display and be reachable.
+
+inbound traffic Denied
+
+![inbound-traffic-deny](Screenshots/inbound-traffic-deny.png)
+Inbound traffic rule in deny state, stops the web page from being reachable.
+
+page live inbound allow
+
+![page-live-inbound-allow](Screenshots/page-live-inbound-allow.png)
+This web page is live in this image because NACL inbound rule is allowed.
+
+page unreachable inbound deny
+
+![page-unreachabe-inbound-deny](Screenshots/page-unreachabe-inbound-deny.png)
+This web page is unreachable due to NACL inbound rule in a deny state.
 
 Documentation
 Projects
