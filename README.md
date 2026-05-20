@@ -96,12 +96,13 @@ inbound traffic Denied
 Inbound traffic rule in deny state, stops the web page from being reachable.
 
 page live inbound allow
+
 ![page-live-inbound-allow](Screenshots/page-live-inbound-allow.png)
 This web page is live in this image because NACL inbound rule is allowed.
 
 page unreachable inbound deny
 
-![page-unreachable-inbound-deny](Screenshots/page-unreachable-inbound-deny.png)
+![page-unreachabe-inbound-deny](Screenshots/page-unreachabe-inbound-deny.png)
 This web page is unreachable due to NACL inbound rule in a deny state.
 
 Documentation
