@@ -105,7 +105,7 @@ page unreachable inbound deny
 ![page-unreachabe-inbound-deny](Screenshots/page-unreachabe-inbound-deny.png)
 This web page is unreachable due to NACL inbound rule in a deny state.
 
-EC2 Monitoring
+Instance Monitoring
 
 ![instance-monitoring](Screenshots/instance-monitoring.png)
 
