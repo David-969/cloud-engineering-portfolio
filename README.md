@@ -1,5 +1,3 @@
-Overview
-
 This repository contains my hands-on cloud engineering projects, deployment workflows, troubleshooting notes, architecture diagrams, and infrastructure documentation.
 
 The portfolio focuses on practical experience with:
@@ -130,3 +128,121 @@ notes/aws-security-groups.md
 notes/git-github-notes.md
 
 notes/deployment-workflow.md
+
+
+
+
+
+
+AWS IAM Security & Access Control Lab
+
+Project Overview
+
+Built a practical AWS IAM security lab to understand identity management, access control, and least privilege principles in AWS cloud environments.
+
+This project focused on:
+
+1. IAM user management
+2. permission enforcement
+3. security best practices
+4. AWS account governance
+5. access troubleshooting
+
+   
+   Technologies Used
+   
+1. AWS IAM
+2. AWS EC2
+3. AWS Management Console
+4. Git & GitHub
+
+   
+Key Features
+
+1. Created multiple IAM users with different permission levels
+
+2. Configured AWS Management Console access
+
+3. Implemented least privilege access control
+
+4. Tested IAM permission enforcement
+
+5. Performed region-based troubleshooting
+
+6. Demonstrated role separation and security boundaries
+
+   
+
+IAM Users Created
+
+User	          Access Level	              Purpose
+Dave-Admin	   AdministratorAccess	        Full AWS administration
+
+Dev-User	     AmazonEC2ReadOnlyAccess	     Read-only infrastructure access
+
+
+Security Concepts Demonstrated
+
+1. Identity & Access Management (IAM)
+2. Least Privilege Principle
+3. Role-Based Access Control (RBAC)
+3. Permission Enforcement
+4. AWS Region Awareness
+5. Cloud Security Fundamentals
+6. Access Troubleshooting
+
+
+Permission Testing
+
+The developer account was tested against restricted EC2 actions.
+
+Successful Actions
+
+1. View EC2 instances
+2. Inspect infrastructure resources
+   
+Blocked Actions
+
+1. Launch EC2 instances
+2. Modify infrastructure
+3. Terminate EC2 instances
+
+This verified correct IAM policy enforcement.
+
+Troubleshooting Experience
+
+Region Mismatch Issue
+
+Problem.
+EC2 instances were not visible after login.
+
+Cause.
+Incorrect AWS region selected.
+
+Resolution.
+Switched to the correct deployment region where the EC2 instance existed.
+
+
+Architecture Diagram
+
+Project Screenshots
+IAM Users
+
+Permission Enforcement
+
+EC2 Visibility
+
+Skills Demonstrated
+
+AWS IAM Administration
+Cloud Security Fundamentals
+User Access Management
+IAM Policy Assignment
+AWS Troubleshooting
+Infrastructure Visibility Control
+Security Governance Concepts
+
+
+
+
+
