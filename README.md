@@ -231,7 +231,7 @@ Project Screenshots
 
 IAM DASHBOARD
 
-![IAM-Dashboard](iamscreenshots/IAM-Dashboard.png)
+![iam-dashboard](iamscreenshots/iam-ashboard.png)
 
 Permission Enforcement
 
