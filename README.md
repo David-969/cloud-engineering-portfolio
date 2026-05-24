@@ -237,8 +237,6 @@ Dev-user Permission Denied
 
 ![dev-user-access-denied](iamscreenshots/dev-user-access-denied.png)
 
-EC2 Visibility
-
 Skills Demonstrated
 
 1. AWS IAM Administration
