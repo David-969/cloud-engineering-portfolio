@@ -231,7 +231,7 @@ Project Screenshots
 
 IAM Users
 
-![IAM Users](iamscreenshots/iamusers.png)
+![IAM Users](iamscreenshots/IAMUsers.png)
 
 
 Permission Enforcement
