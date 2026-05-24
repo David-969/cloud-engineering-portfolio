@@ -1,0 +1,195 @@
+
+Deployment Workflow
+
+
+Step 1 — Create IAM Users
+
+
+
+Created IAM users through AWS Management Console.
+
+Enabled:
+
+AWS console access
+
+password authentication
+
+
+Step 2 — Assign Permissions
+
+Attached IAM policies directly to users.
+
+Policies used:
+
+AdministratorAccess
+
+AmazonEC2ReadOnlyAccess
+
+
+Step 3 — Test Access
+
+Logged into AWS Console using separate IAM identities.
+
+Validated:
+
+resource visibility
+
+permission restrictions
+
+access denial behavior
+
+
+
+Step 4 — Troubleshoot Access Issues
+
+Identified region mismatch issue preventing EC2 visibility.
+
+Corrected AWS region and restored access.
+
+
+
+Security Concepts Demonstrated
+
+Identity-based access control
+
+Least privilege security model
+
+Role separation
+
+Permission enforcement
+
+AWS account governance
+
+Region awareness
+
+Access troubleshooting
+
+
+
+Skills Demonstrated
+
+AWS IAM administration
+
+AWS Console management
+
+User access control
+
+IAM policy assignment
+
+Security troubleshooting
+
+Cloud governance concepts
+
+AWS region management
+
+
+Challenges and Troubleshooting
+
+Region Mismatch
+
+Problem
+
+EC2 instances not visible after login.
+
+Cause
+
+Incorrect AWS region selected.
+
+Resolution
+
+Switched to correct region where infrastructure was deployed.
+
+
+
+Permission Denied Behavior
+
+Problem
+
+Developer user unable to create EC2 resources.
+
+Cause
+
+IAM policy restricted modification actions.
+
+Resolution
+
+Verified least privilege policy enforcement was working correctly.
+
+
+
+
+Lessons Learned
+
+This project provided practical experience with:
+
+AWS identity management
+
+permission boundaries
+
+cloud security fundamentals
+
+AWS access troubleshooting
+
+role-based access control
+
+
+
+Also learned the importance of:
+
+separate IAM identities
+
+avoiding root account usage
+
+controlled permissions
+
+auditability in cloud environments
+
+
+
+IAM Concepts Learned
+
+IAM Users
+
+Created separate IAM users for:
+
+administration
+
+development
+
+access testing
+
+Least Privilege Principle
+
+Implemented limited permissions so users only access resources necessary for their role.
+
+Example:
+
+developer user could view EC2 resources
+
+developer user could NOT create or terminate EC2 instances
+
+Permission Enforcement
+
+Tested AWS permission boundaries by attempting restricted actions.
+
+Observed:
+
+successful read-only access
+
+denied infrastructure modification attempts
+
+Region Troubleshooting
+
+Learned that AWS resources are region-specific.
+
+Encountered issue:
+
+EC2 instances appeared missing
+
+Cause:
+
+incorrect AWS region selected
+
+Resolution:
+
+switched to correct deployment region

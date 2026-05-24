@@ -1,0 +1,51 @@
+Project Overview
+
+This project demonstrates practical AWS Identity and Access Management (IAM) administration and security testing.
+
+The lab was built to understand:
+
+IAM users
+permissions
+access control
+least privilege principles
+policy enforcement
+AWS account security
+
+The project simulates a real-world cloud environment with different user roles and permission levels.
+
+Project Objectives
+
+Create IAM users
+Configure AWS Management Console access
+Assign IAM permissions
+Test permission enforcement
+Understand least privilege access
+Troubleshoot AWS access issues
+Learn IAM security best practices
+
+Technologies Used
+
+Cloud Platform
+AWS
+
+AWS Services
+- IAM
+- EC2
+
+Tools
+- AWS Management Console
+- Browser-based testing
+
+
+Architecture Overview
+
+AWS Account
+│
+├── IAM Admin User
+│     └── Full AWS Access
+│
+├── IAM Developer User
+│     └── EC2 Read-Only Access
+│
+└── AWS Resources
+      └── EC2 Instances

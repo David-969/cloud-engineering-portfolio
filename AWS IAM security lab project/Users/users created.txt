@@ -1,0 +1,29 @@
+IAM Users Created
+
+Admin User
+
+Username
+
+dave-admin
+
+Permissions
+
+AdministratorAccess
+
+Purpose
+
+Full administrative access for AWS management.
+
+Developer User
+
+Username
+
+Dev-User
+
+Permissions
+
+AmazonEC2ReadOnlyAccess
+
+Purpose
+
+Read-only infrastructure visibility without modification permissions.
