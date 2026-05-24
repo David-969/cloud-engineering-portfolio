@@ -233,7 +233,9 @@ IAM DASHBOARD
 
 ![iam-dashboard](iamscreenshots/iam-dashboard.png)
 
-Permission Enforcement
+Dev-user Permission Denied
+
+![dev-user-access-denied](iamscreenshots/dev-user-access-denied.png)
 
 EC2 Visibility
 
