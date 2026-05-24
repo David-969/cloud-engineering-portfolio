@@ -229,10 +229,9 @@ Architecture Diagram
 
 Project Screenshots
 
-IAM Users
+IAM DASHBOARD
 
-![IAM Users](iamscreenshots/IAMUsers.png)
-
+![IAM-Dashboard](iamscreenshots/IAM-Dashboard.png)
 
 Permission Enforcement
 
