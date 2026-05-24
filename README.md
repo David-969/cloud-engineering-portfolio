@@ -231,7 +231,7 @@ Project Screenshots
 
 IAM Users
 
-![users created](users/uerscreated.png)
+![IAM Users](iamscreenshots/userscreated.png)
 
 
 Permission Enforcement
