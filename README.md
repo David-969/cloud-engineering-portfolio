@@ -225,7 +225,7 @@ Switched to the correct deployment region where the EC2 instance existed.
 
 Architecture Diagram
 
-![iam diagram](awsiamsecuritylabproject/diagram/iamdiagram.png)
+![iam diagram](awsiamsecuritylabproject/diagrams/iamdiagram.png)
 
 Project Screenshots
 IAM Users
