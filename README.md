@@ -225,7 +225,7 @@ Switched to the correct deployment region where the EC2 instance existed.
 
 Architecture Diagram
 
-![iamdiagram](iamdiagrams/IAMDiagram.png)
+![iamd-iagram](iamdiagrams/iam-iagram.png)
 
 Project Screenshots
 IAM Users
