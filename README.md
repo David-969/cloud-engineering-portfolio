@@ -225,6 +225,8 @@ Switched to the correct deployment region where the EC2 instance existed.
 
 Architecture Diagram
 
+![iam diagram](awsiamsecuritylabproject/diagram/iamdiagram.png)
+
 Project Screenshots
 IAM Users
 
@@ -234,13 +236,13 @@ EC2 Visibility
 
 Skills Demonstrated
 
-AWS IAM Administration
-Cloud Security Fundamentals
-User Access Management
-IAM Policy Assignment
-AWS Troubleshooting
-Infrastructure Visibility Control
-Security Governance Concepts
+1. AWS IAM Administration
+2. Cloud Security Fundamentals
+3. User Access Management
+4. IAM Policy Assignment
+5. AWS Troubleshooting
+6. Infrastructure Visibility Control
+7. Security Governance Concepts
 
 
 
