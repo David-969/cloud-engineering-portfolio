@@ -214,12 +214,15 @@ Troubleshooting Experience
 Region Mismatch Issue
 
 Problem.
+
 EC2 instances were not visible after login.
 
 Cause.
+
 Incorrect AWS region selected.
 
 Resolution.
+
 Switched to the correct deployment region where the EC2 instance existed.
 
 
@@ -231,11 +234,14 @@ Project Screenshots
 
 IAM DASHBOARD
 
-![IAM-Dashboard](iamscreenshots/IAM-Dashboard.png)
+![iam-dashboard](iamscreenshots/iam-dashboard.png)
 
-Permission Enforcement
+Dev-user Permission Denied
 
-EC2 Visibility
+![dev-user-access-denied](iamscreenshots/dev-user-access-denied.png)
+
+
+
 
 Skills Demonstrated
 

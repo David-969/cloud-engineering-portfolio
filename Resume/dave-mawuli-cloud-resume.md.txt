@@ -1,114 +1,136 @@
                                           
 
-                                   DAVID MAWULI KAGBERESI  
-
- 
+                                            DAVID MAWULI KAGBERESI  
                               Accra, Madina, +233207143790, davidkagberesi123@gmail.com,  
-
-                                      www.linkedin.com/in/david-mawuli-kagberesi,  
-
-                                         https://github.com/David-969/
-
+                                  LinkedIn: www.linkedin.com/in/david-mawuli-kagberesi              
  
+Aspiring Cloud and Infrastructure Engineer with hands-on experience deploying and managing web applications on AWS EC2 using Linux, Nginx, IAM, Git, and GitHub workflows. Skilled in configuring Security Groups, troubleshooting SSH and networking issues, and managing Linux-based cloud deployments. Experienced in implementing IAM security principles including least privilege access control through practical AWS labs and real-world projects. Currently expanding cloud engineering expertise through self-driven infrastructure, Docker, monitoring, and security projects. 
 
-Aspiring Cloud and Infrastructure Engineer with hands-on experience deploying and managing web applications on AWS EC2 using Linux, Nginx, Git, and GitHub workflows. Skilled in troubleshooting SSH/networking issues, configuring Security Groups, and managing Linux-based deployments. Currently building practical cloud engineering and DevOps skills through real-world projects and self-driven labs. 
-
- 
-
-EDUCATION   
-
-UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA , Degree in Information Technology Management (2022-2025)             
-
-UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA , Diploma in Information Technology Management (2020-2022)  
-
-ADISADEL COLLEGE ,West African Secondary School Certificate Examination (2017-2020)  
-
- 
 
 TECHNICAL SKILLS  
 
+Cloud Platforms & Services 
 
-Cloud Platforms: 
+AWS (EC2, IAM, VPC, CloudWatch, Elastic IP)  
 
-AWS EC2 
+Networking & Security 
 
-AWS Security Groups 
+Security Groups  
 
-Elastic IP basics 
+Network ACLs (NACLs)  
 
-Operating Systems: 
+SSH & SCP  
 
-Linux (Amazon Linux) 
+TCP/IP Fundamentals  
 
-Windows 
+Port Management  
 
-Web & Infrastructure: 
+Network Troubleshooting  
 
-Nginx 
+Principle of Least Privilege (PoLP)  
 
-SSH 
+Role-Based Access Control (RBAC)  
 
-Static Website Hosting 
+DevOps & Infrastructure Tools 
+
+Docker  
+
+Git  
+
+GitHub  
+
+AWS CLI  
+
+AWS Policy Simulator  
+
+Nginx  
+
+Operating Systems & Administration 
+
+Linux (Amazon Linux)  
+
+Windows PowerShell  
+
+VS Code  
 
  
 
-Version Control: 
+ 
 
-Git 
-
-GitHub 
-
-Networking: 
-
-TCP/IP basics 
-
- Port management 
-
-Security Groups 
-
-Network troubleshooting. 
-
-Tools: 
-
-VS Code 
-
- PowerShell 
-
+ 
 
 PROJECTS 
 
-Project 1 — AWS EC2 Web Deployment 
+        Project 1 AWS EC2 Web Deployment 
 
-Deployed and managed a static landing page on AWS EC2 using Nginx and Linux administration. 
+Deployed and managed a static website on AWS EC2 using Nginx and Linux administration. 
 
-Configured and managed AWS EC2 instance and Security Groups 
+Provisioned and configured AWS EC2 infrastructure and Security Groups 
 
- Installed and configured Nginx web server 
+Installed and configured Nginx web server on Amazon Linux  
 
-Hosted and served website content using Linux file system structure 
+Hosted and managed website content using Linux file system structure  
 
- Implemented Git and GitHub deployment workflow 
+Implemented Git and GitHub deployment workflow for version control  
 
-Used SSH with PEM authentication for secure remote administration 
+Used SSH with PEM authentication for secure remote administration  
 
-Troubleshot connectivity, Security Group, and networking issues 
+Troubleshot connectivity, SSH, and networking-related issues  
 
- Managed deployment updates from GitHub repository to live server 
+Managed deployment updates from GitHub repository to live production server  
 
  
 
-Project 1 — AWS EC2 Web Deployment 
+      Project 2 Dockerized AWS Web Deployment 
 
-Implemented source-controlled deployment workflow using Git and GitHub. 
+Implemented a containerized web deployment workflow using Docker, GitHub, and AWS EC2. 
 
-Initialized local Git repository using VS Code 
+Initialized and managed Git repositories using VS Code and GitHub  
 
- Managed commits, pushes, and remote GitHub repository integration 
+Cloned and synchronized GitHub repositories on AWS EC2 instances  
 
-Cloned GitHub repository onto AWS EC2 instance 
+Updated live web application using Git pull deployment workflow  
 
- Updated live web application using Git pull deployment workflow 
+Configured Docker containers to host Nginx-based web applications  
 
+Resolved port conflicts between host Nginx services and Docker containers  
+
+Implemented Security Group and Network ACL (NACL) testing to analyze traffic filtering behavior  
+
+Performed troubleshooting for deployment, networking, and container-related issues  
+
+Deployed containerized applications with Linux-based infrastructure administration 
+
+ 
+
+         Project 3 AWS Identity & Access Management (IAM) Security Lab 
+
+Designed and implemented a secure AWS IAM environment to demonstrate access control, least privilege, and identity separation. 
+
+Provisioned separate IAM identities for administrative and developer access control  
+
+Configured administrative permissions using AWS-managed AdministratorAccess policies   
+
+Implemented least privilege access controls using restrictive IAM policies  
+
+Tested IAM permission boundaries using AWS Policy Simulator and AWS Console validation   
+
+Verified restricted access behavior against EC2 infrastructure actions  
+
+Performed region-based troubleshooting to resolve resource visibility issues  
+
+Enforced secure authentication practices using AWS account password policies  
+
+Demonstrated role separation and cloud governance fundamentals 
+
+
+EDUCATION     
+
+UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA, Bachelor’s Degree in Information Technology Management (2022-2025)             
+
+UNIVERSITY OF PROFESSIONAL STUDIES, ACCRA, Diploma in Information Technology Management (2020-2022)  
+
+ADISADEL COLLEGE, West African Secondary School Certificate Examination (2017-2020) 
 
 
 LANGUAGES   
