@@ -1,0 +1,69 @@
+Automated Deployment
+
+Deployment workflow:
+
+git push
+    ↓
+GitHub Actions
+    ↓
+SSH to EC2
+    ↓
+git pull origin main
+    ↓
+Update Nginx web root
+    ↓
+Website updated automatically
+
+
+
+Troubleshooting and Validation
+
+Resolved:
+
+SSH connectivity issues
+
+Security Group access restrictions
+
+NACL traffic filtering issues
+
+Git repository ownership conflicts
+
+GitHub Actions workflow failures
+
+Key Achievements
+
+Implemented end-to-end deployment automation.
+
+Reduced deployments to a single Git push operation.
+
+Integrated AWS EC2, Nginx, GitHub, and GitHub Actions into a working CI/CD pipeline.
+
+Implemented secure credential management using GitHub Secrets.
+
+Eliminated manual deployment steps through workflow automation.
+
+
+Skills Demonstrated
+
+
+AWS EC2 Administration
+
+Linux System Administration
+
+Git & GitHub
+
+GitHub Actions
+
+CI/CD Pipeline Design
+
+SSH Authentication
+
+Security Groups
+
+Network ACLs
+
+Nginx Configuration
+
+Deployment Automation
+
+Troubleshooting & Incident Resolution

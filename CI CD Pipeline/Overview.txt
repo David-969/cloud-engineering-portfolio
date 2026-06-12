@@ -1,0 +1,16 @@
+Overview
+
+Designed and implemented an automated CI/CD pipeline that deploys website updates from GitHub to an AWS EC2-hosted Nginx web server. The solution uses GitHub Actions, SSH key-based authentication, and automated deployment workflows to eliminate manual deployment processes. 
+
+
+Objectives
+
+Automate website deployments to AWS EC2
+
+Eliminate manual SSH deployment procedures
+
+Secure deployment credentials using GitHub Secrets
+
+Implement SSH-based trust between GitHub Actions and EC2
+
+Build a repeatable deployment workflow aligned with DevOps best practices

@@ -1,0 +1,59 @@
+Technologies Used
+
+Cloud & Infrastructure
+
+AWS EC2
+Amazon Linux
+
+CI/CD & Automation
+
+GitHub Actions
+GitHub Secrets
+
+Web Server
+
+Nginx
+
+Version Control
+
+Git
+GitHub
+
+
+
+
+Security
+
+SSH Public/Private Key Authentication
+
+Security Groups
+
+Network ACLs (NACLs)
+
+Implementation
+1. Source Code Management
+
+Hosted website source code in GitHub.
+Configured a main branch deployment workflow.
+
+2. SSH Trust Configuration
+
+Generated an Ed25519 SSH key pair.
+Added the public key to the EC2 authorized_keys file.
+Stored the private key securely in GitHub Secrets.
+
+3. GitHub Actions Workflow
+
+Configured a workflow that triggers automatically on pushes to the main branch.
+
+
+
+Workflow responsibilities:
+
+Connect to EC2 using SSH
+
+Pull latest code changes
+
+Deploy updated files to the Nginx web root
+
+Log deployment results
