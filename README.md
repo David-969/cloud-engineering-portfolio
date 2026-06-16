@@ -108,9 +108,6 @@ Instance Monitoring
 ![instance-monitoring](Screenshots/instance-monitoring.png)
 
 
-CI/CD Pipeline
-
-![diagram](CICDPipeline/CICDDiagram/Diagram.png)
 
 Documentation
 Projects
