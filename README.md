@@ -107,6 +107,11 @@ Instance Monitoring
 
 ![instance-monitoring](Screenshots/instance-monitoring.png)
 
+
+CI/CD Pipeline
+
+![diagram](CICDdiagram/diagram.png)
+
 Documentation
 Projects
 
@@ -254,6 +259,13 @@ Skills Demonstrated
 7. Security Governance Concepts
 
 
+Future Improvements
 
+- Provision EC2, Security Groups, and networking resources using Terraform
+- Automate Nginx and Docker configuration using Ansible
+- Implement CloudWatch monitoring and alerting
+- Deploy behind an Application Load Balancer (ALB)
+- Configure Auto Scaling Groups for high availability
+- Store and deploy container images from Amazon ECR and more
 
 
