@@ -110,7 +110,7 @@ Instance Monitoring
 
 CI/CD Pipeline
 
-![diagram](CICDdiagram/diagram.png)
+![diagram](CICDpipeline/CICDdiagram/diagram.png)
 
 Documentation
 Projects
