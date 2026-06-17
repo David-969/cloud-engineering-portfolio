@@ -37,9 +37,9 @@ Gained practical experience with Linux administration, SSH, Nginx configuration,
 
 ![deploymentflow](Diagrams/deploymentflow.png)
 
-Second Deployment with Git and Github
 
-Project Phase 2: GitHub-Based Website Deployment Architecture
+
+Project 2: GitHub-Based Website Deployment Architecture
 
 Situation
 
