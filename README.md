@@ -53,6 +53,22 @@ First Deployment with SCP Without Git and Github.
 
 Second Deployment with Git and Github
 
+Designed and deployed a containerized static website hosting solution on AWS EC2 using Docker and Nginx. Implemented GitHub-based source control, Docker volume mounting for persistent content delivery, and Linux server administration to provide a reliable and portable web hosting environment.
+
+End Users
+
+Browser
+    ↓
+HTTP Request
+    ↓
+EC2 Public IP
+    ↓
+Port 80
+    ↓
+Nginx Container
+    ↓
+Website Response
+
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
 Third Deployment with Docker
