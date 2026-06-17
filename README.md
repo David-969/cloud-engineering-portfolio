@@ -1,39 +1,84 @@
-Featured Project
-AWS EC2 Nginx Website Deployment
+Project Phase 1: Initial Website Deployment Using SCP
 
-Built and deployed a static landing page on AWS EC2 using Linux and Nginx.
+Situation
 
-Skills Demonstrated
-AWS EC2 administration
-Linux command-line operations
-Nginx configuration
-SSH remote administration
-GitHub deployment workflow
-Security Group configuration
-Troubleshooting and debugging
-Deployment Architecture
+A static website needed to be deployed to a cloud-hosted web server on AWS. At this stage, there was no source control or automated deployment process in place, and website files existed only on the local machine.
 
-Deployment Workflow
-VS Code
-↓
-GitHub
-↓
-AWS EC2
-↓
-Nginx
-↓
-Live Website
+Task
+
+Deploy the website to an AWS EC2 instance running Amazon Linux and make it accessible to users over the internet using Nginx as the web server.
+
+Action
+
+Provisioned an Amazon Linux EC2 instance in AWS.
+
+Configured Security Groups to allow SSH (Port 22) and HTTP (Port 80) traffic.
+
+Installed and configured the Nginx web server.
+
+Created website files locally using VS Code.
+
+Used SCP (Secure Copy Protocol) over SSH to transfer website files from the local machine to the EC2 instance.
+
+Moved website files into Nginx's document root (/usr/share/nginx/html).
+
+Verified web server functionality and browser accessibility using the EC2 public IP address.
 
 
-Screenshots
+Result
 
-First Deployment with SCP Without Git and Github.
+Successfully hosted a static website on AWS EC2.
+
+Established a secure file transfer process using SCP and SSH.
+
+Enabled internet-based access to the website through Nginx.
+
+Gained practical experience with Linux administration, SSH, Nginx configuration, and AWS networking.
 
 ![deploymentflow](Diagrams/deploymentflow.png)
 
 Second Deployment with Git and Github
 
+Project Phase 2: GitHub-Based Website Deployment Architecture
 
+Situation
+
+While the SCP deployment method successfully hosted the website, every update required manually copying files from the local machine to the server. This process was time-consuming, difficult to track, and lacked version control.
+
+Task
+
+Improve the deployment workflow by introducing source control and centralized code management while maintaining secure administration and website availability.
+
+Action
+
+Created and configured a GitHub repository to store website source code.
+
+Initialized Git version control locally using VS Code and Git.
+
+Implemented a Git-based workflow using commits and pushes to GitHub.
+
+Cloned the repository onto the EC2 instance.
+
+Used Git pull operations to retrieve updates from GitHub to the server.
+
+Continued managing the EC2 instance through SSH.
+
+Configured Nginx to serve website content from the deployment directory.
+
+Maintained HTTP access for end users through Port 80.
+
+
+Result
+
+Eliminated the need to manually transfer files using SCP for every update.
+
+Established a centralized source-of-truth repository for website code.
+
+Improved deployment consistency and version tracking.
+
+Enabled easier collaboration and rollback capabilities through Git history.
+
+Built a foundation for future CI/CD automation using GitHub Actions.
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
@@ -96,20 +141,6 @@ Improved application portability by running the website within a Docker containe
 
 Created a foundation for future automation, CI/CD integration, monitoring, and infrastructure scaling initiatives.
 
-
-End Users
-
-Browser
-    ↓
-HTTP Request
-    ↓
-EC2 Public IP
-    ↓
-Port 80
-    ↓
-Nginx Container
-    ↓
-Website Response
 
 ![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
