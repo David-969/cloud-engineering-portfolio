@@ -4,11 +4,11 @@ Situation
 
 A static website needed to be deployed to a cloud-hosted web server on AWS. At this stage, there was no source control or automated deployment process in place, and website files existed only on the local machine.
 
-Task
+Task:
 
 Deploy the website to an AWS EC2 instance running Amazon Linux and make it accessible to users over the internet using Nginx as the web server.
 
-Action
+Action:
 
 Provisioned an Amazon Linux EC2 instance in AWS.
 
@@ -25,7 +25,7 @@ Moved website files into Nginx's document root (/usr/share/nginx/html).
 Verified web server functionality and browser accessibility using the EC2 public IP address.
 
 
-Result
+Result:
 
 Successfully hosted a static website on AWS EC2.
 
@@ -39,17 +39,18 @@ Gained practical experience with Linux administration, SSH, Nginx configuration,
 
 
 
+
 Project 2: GitHub-Based Website Deployment Architecture
 
-Situation
+Situation:
 
 While the SCP deployment method successfully hosted the website, every update required manually copying files from the local machine to the server. This process was time-consuming, difficult to track, and lacked version control.
 
-Task
+Task:
 
 Improve the deployment workflow by introducing source control and centralized code management while maintaining secure administration and website availability.
 
-Action
+Action:
 
 Created and configured a GitHub repository to store website source code.
 
@@ -68,7 +69,7 @@ Configured Nginx to serve website content from the deployment directory.
 Maintained HTTP access for end users through Port 80.
 
 
-Result
+Result:
 
 Eliminated the need to manually transfer files using SCP for every update.
 
@@ -84,16 +85,16 @@ Built a foundation for future CI/CD automation using GitHub Actions.
 
 
 
-Third Deployment with Docker
-Project 2: AWS EC2 + Docker + Nginx Website Deployment
 
-Situation
+Project 3: AWS EC2 + Docker + Nginx Website Deployment
+
+Situation:
 
 A static website needed to be hosted in a reliable and portable environment rather than running directly on a local machine. 
 
 The goal was to deploy the application on AWS while leveraging containerization to create a consistent deployment environment and improve maintainability.
 
-Task
+Task:
 
 Design and deploy a cloud-based hosting solution that would:
 
@@ -109,7 +110,7 @@ Allow secure remote administration through SSH.
 
 
 
-Action
+Action:
 
 
 Provisioned and configured an AWS EC2 instance running Amazon Linux.
@@ -129,7 +130,7 @@ Performed Linux administration and troubleshooting using SSH for deployment and 
 Verified end-user accessibility through browser-based testing.
 
 
-Result
+Result:
 
 Successfully deployed a containerized static website on AWS EC2.
 
@@ -145,7 +146,7 @@ Created a foundation for future automation, CI/CD integration, monitoring, and i
 ![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
 
-CI/CD Pipeline Deployment
+Project 4: CI/CD Pipeline Deployment
 
 Situation: 
 
