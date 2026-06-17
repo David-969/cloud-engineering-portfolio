@@ -33,35 +33,69 @@ First Deployment with SCP Without Git and Github.
 
 Second Deployment with Git and Github
 
+
+
+![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
+
+
+
+Third Deployment with Docker
 Project 2: AWS EC2 + Docker + Nginx Website Deployment
+
 Situation
 
-A static website needed to be hosted in a reliable and portable environment rather than running directly on a local machine. The goal was to deploy the application on AWS while leveraging containerization to create a consistent deployment environment and improve maintainability.
+A static website needed to be hosted in a reliable and portable environment rather than running directly on a local machine. 
+
+The goal was to deploy the application on AWS while leveraging containerization to create a consistent deployment environment and improve maintainability.
 
 Task
 
 Design and deploy a cloud-based hosting solution that would:
 
 Host a static website on AWS EC2.
+
 Use Docker for application containerization.
+
 Serve website content through Nginx.
+
 Store source code in GitHub for version control.
+
 Allow secure remote administration through SSH.
+
+
+
 Action
+
+
 Provisioned and configured an AWS EC2 instance running Amazon Linux.
+
 Installed and configured Docker Engine on the EC2 server.
+
 Pulled and managed a Dockerized Nginx web server container.
+
 Configured Docker volume mounting to map the host directory (/usr/share/nginx/html) to the Nginx container for persistent website content.
+
 Stored website source code in a GitHub repository and used Git workflows for version control.
+
 Configured Security Groups to allow HTTP (Port 80) and SSH (Port 22) access.
+
 Performed Linux administration and troubleshooting using SSH for deployment and maintenance activities.
+
 Verified end-user accessibility through browser-based testing.
+
+
 Result
+
 Successfully deployed a containerized static website on AWS EC2.
+
 Achieved separation between the web server runtime and website content using Docker volume mounts.
+
 Established a repeatable deployment workflow using GitHub as the source repository.
+
 Improved application portability by running the website within a Docker container rather than directly on the host operating system.
+
 Created a foundation for future automation, CI/CD integration, monitoring, and infrastructure scaling initiatives.
+
 
 End Users
 
@@ -76,10 +110,6 @@ Port 80
 Nginx Container
     ↓
 Website Response
-
-![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
-
-Third Deployment with Docker
 
 ![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
