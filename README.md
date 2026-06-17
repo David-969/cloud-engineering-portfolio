@@ -1,61 +1,146 @@
-This repository contains my hands-on cloud engineering projects, deployment workflows, troubleshooting notes, architecture diagrams, and infrastructure documentation.
+Project Phase 1: Initial Website Deployment Using SCP
 
-The portfolio focuses on practical experience with:
-  AWS EC2
-  Linux administration
-  Nginx web hosting
-  Git and GitHub workflows
-  SSH remote administration
-  Cloud networking fundamentals
-  Deployment troubleshooting
+Situation
 
-Portfolio Structure
-Cloud-Engineering-Portfolio
-diagrams
-notes
-projects
-resume
-screenshots
+A static website needed to be deployed to a cloud-hosted web server on AWS. At this stage, there was no source control or automated deployment process in place, and website files existed only on the local machine.
 
+Task
 
-Featured Project
-AWS EC2 Nginx Website Deployment
+Deploy the website to an AWS EC2 instance running Amazon Linux and make it accessible to users over the internet using Nginx as the web server.
 
-Built and deployed a static landing page on AWS EC2 using Linux and Nginx.
+Action
 
-Skills Demonstrated
-AWS EC2 administration
-Linux command-line operations
-Nginx configuration
-SSH remote administration
-GitHub deployment workflow
-Security Group configuration
-Troubleshooting and debugging
-Deployment Architecture
+Provisioned an Amazon Linux EC2 instance in AWS.
 
-Deployment Workflow
-VS Code
-↓
-GitHub
-↓
-AWS EC2
-↓
-Nginx
-↓
-Live Website
+Configured Security Groups to allow SSH (Port 22) and HTTP (Port 80) traffic.
+
+Installed and configured the Nginx web server.
+
+Created website files locally using VS Code.
+
+Used SCP (Secure Copy Protocol) over SSH to transfer website files from the local machine to the EC2 instance.
+
+Moved website files into Nginx's document root (/usr/share/nginx/html).
+
+Verified web server functionality and browser accessibility using the EC2 public IP address.
 
 
-Screenshots
+Result
 
-First Deployment with SCP Without Git and Github.
+Successfully hosted a static website on AWS EC2.
+
+Established a secure file transfer process using SCP and SSH.
+
+Enabled internet-based access to the website through Nginx.
+
+Gained practical experience with Linux administration, SSH, Nginx configuration, and AWS networking.
 
 ![deploymentflow](Diagrams/deploymentflow.png)
 
-Second Deployment with Git and Github
+
+
+Project 2: GitHub-Based Website Deployment Architecture
+
+Situation
+
+While the SCP deployment method successfully hosted the website, every update required manually copying files from the local machine to the server. This process was time-consuming, difficult to track, and lacked version control.
+
+Task
+
+Improve the deployment workflow by introducing source control and centralized code management while maintaining secure administration and website availability.
+
+Action
+
+Created and configured a GitHub repository to store website source code.
+
+Initialized Git version control locally using VS Code and Git.
+
+Implemented a Git-based workflow using commits and pushes to GitHub.
+
+Cloned the repository onto the EC2 instance.
+
+Used Git pull operations to retrieve updates from GitHub to the server.
+
+Continued managing the EC2 instance through SSH.
+
+Configured Nginx to serve website content from the deployment directory.
+
+Maintained HTTP access for end users through Port 80.
+
+
+Result
+
+Eliminated the need to manually transfer files using SCP for every update.
+
+Established a centralized source-of-truth repository for website code.
+
+Improved deployment consistency and version tracking.
+
+Enabled easier collaboration and rollback capabilities through Git history.
+
+Built a foundation for future CI/CD automation using GitHub Actions.
 
 ![Architecture Diagram](Diagrams/aws-ec2-nginx-architecture.png)
 
+
+
 Third Deployment with Docker
+Project 2: AWS EC2 + Docker + Nginx Website Deployment
+
+Situation
+
+A static website needed to be hosted in a reliable and portable environment rather than running directly on a local machine. 
+
+The goal was to deploy the application on AWS while leveraging containerization to create a consistent deployment environment and improve maintainability.
+
+Task
+
+Design and deploy a cloud-based hosting solution that would:
+
+Host a static website on AWS EC2.
+
+Use Docker for application containerization.
+
+Serve website content through Nginx.
+
+Store source code in GitHub for version control.
+
+Allow secure remote administration through SSH.
+
+
+
+Action
+
+
+Provisioned and configured an AWS EC2 instance running Amazon Linux.
+
+Installed and configured Docker Engine on the EC2 server.
+
+Pulled and managed a Dockerized Nginx web server container.
+
+Configured Docker volume mounting to map the host directory (/usr/share/nginx/html) to the Nginx container for persistent website content.
+
+Stored website source code in a GitHub repository and used Git workflows for version control.
+
+Configured Security Groups to allow HTTP (Port 80) and SSH (Port 22) access.
+
+Performed Linux administration and troubleshooting using SSH for deployment and maintenance activities.
+
+Verified end-user accessibility through browser-based testing.
+
+
+Result
+
+Successfully deployed a containerized static website on AWS EC2.
+
+Achieved separation between the web server runtime and website content using Docker volume mounts.
+
+Established a repeatable deployment workflow using GitHub as the source repository.
+
+Improved application portability by running the website within a Docker container rather than directly on the host operating system.
+
+Created a foundation for future automation, CI/CD integration, monitoring, and infrastructure scaling initiatives.
+
 
 ![Docker-deploy-flow](Diagrams/Docker-deploy-flow.png)
 
@@ -106,6 +191,8 @@ This web page is unreachable due to NACL inbound rule in a deny state.
 Instance Monitoring
 
 ![instance-monitoring](Screenshots/instance-monitoring.png)
+
+
 
 Documentation
 Projects
@@ -254,6 +341,13 @@ Skills Demonstrated
 7. Security Governance Concepts
 
 
+Future Improvements
 
+- Provision EC2, Security Groups, and networking resources using Terraform
+- Automate Nginx and Docker configuration using Ansible
+- Implement CloudWatch monitoring and alerting
+- Deploy behind an Application Load Balancer (ALB)
+- Configure Auto Scaling Groups for high availability
+- Store and deploy container images from Amazon ECR and more
 
 
