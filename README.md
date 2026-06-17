@@ -338,7 +338,26 @@ Switched to the correct deployment region where the EC2 instance existed.
 
 Architecture Diagram
 
+Project 5: AWS IAM Security & Access Control Lab 
+
+Situation:
+
+A cloud environment required a structured identity and access management strategy to ensure users only had the permissions necessary for their role, reducing security risk across AWS resources.
+
+Task: 
+
+Implement and demonstrate IAM least-privilege access control by configuring two distinct user types with different permission levels, and validate enforcement against live AWS resources.
+
+Action: 
+
+Created two IAM users under a single AWS account managed by IAM — Dave-Admin, assigned AdministratorAccess for full control over all AWS resources, infrastructure, billing, and IAM policies; and Dev-User, assigned AmazonEC2ReadOnlyAccess to limit interaction to viewing EC2 instances, details, and networking configurations only. Both users were scoped to EC2 instances in us-east-1, with AWS CloudTrail enabled to log all API calls, user activities, and console actions for auditing.
+
+Result: 
+
+Permission boundaries were successfully enforced — Dev-User could view and describe EC2 instances but was blocked from creating, starting, stopping, or terminating them, while Dave-Admin retained full access. The lab demonstrated the least-privilege principle in action.
+
 ![iam-diagram](iamdiagrams/iam-diagram.png)
+
 
 Project Screenshots
 
