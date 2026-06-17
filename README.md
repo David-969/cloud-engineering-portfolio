@@ -156,6 +156,7 @@ Task:
 Design and implement a CI/CD pipeline that automatically deploys code changes from a local development environment to a live web server hosted on AWS EC2.
 
 Action:
+
 Built an end-to-end automated pipeline using GitHub Actions as the orchestration layer. Code changes authored in VS Code are pushed to a GitHub repository (main branch), which triggers a GitHub Actions workflow on an Ubuntu runner. The workflow authenticates to an AWS EC2 instance (Amazon Linux) via SSH using secrets stored securely in GitHub (EC2_HOST, EC2_USER, EC2_SSH_KEY), then pulls the latest code and copies updated files to the Nginx web root at /usr/share/nginx/html.
 
 Result:
